@@ -1,0 +1,178 @@
+/*
+** Body **
+*/
+
+body {
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/*
+** Desktop **
+*/
+
+.video-container {
+  position: relative;
+  height: 900px;
+  overflow: hidden;
+}
+
+.video,
+.filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.filter {
+  background-color: black;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  /* For IE8 and earlier */
+}
+
+.hero-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  height: 900px;
+  overflow: hidden;
+}
+
+.left-hero {
+  width: 55%;
+  position: relative;
+}
+
+.bottle-desktop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logo-desktop {
+  width: 40%;
+  margin-bottom: 2em;
+}
+
+.body-container {
+  width: 90%;
+  margin: auto;
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px solid rgb(58, 58, 58);
+  margin: 2em 0;
+}
+
+.right-hero {
+  width: 45%;
+  margin-top: 5%;
+  padding-right: 4%;
+}
+
+
+.button-container {
+  margin-top: 4em;
+}
+
+.btn-buy,
+.btn-instagram {
+  margin: .5em;
+}
+
+.footer {
+  padding: 2em;
+  padding-top: 5em;
+}
+
+/*
+** Typography **
+*/
+
+h1 {
+  font-size: 1.15em;
+  font-weight: bold;
+  letter-spacing: .5em;
+  line-height: 2.5em;
+  color: rgb(192, 189, 170);
+}
+
+p {
+  font-weight: 300;
+  line-height: 2em;
+  letter-spacing: .15em;
+  color: rgb(90, 90, 90);
+  margin-bottom: 2em;
+}
+
+/* 
+** Buttons **
+*/
+
+.button {
+  padding: 1.25em;
+  padding-bottom: 1em;
+  background: rgb(197, 138, 91);
+  color: white;
+  font-size: 1em;
+  letter-spacing: .15em;
+  text-decoration: none;
+}
+
+.button:hover {
+  color: rgb(126, 126, 126)
+}
+
+.btn-instagram {
+  position: relative;
+  padding-left: 3em;
+}
+
+.ig-icon {
+  position: absolute;
+  left: 1em;
+  bottom: 1.015em;
+  height: 1.15em;
+}
+
+/* 
+** Responsive **
+*/
+
+@media screen and (max-width: 980px) {
+
+  .left-hero {
+    display: none;
+  }
+
+  .right-hero {
+    width: 100%;
+    padding: 5%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .video-container {
+    display: none;
+  }
+
+  .hero-container {
+    position: relative;
+    height: 100%;
+  }
+
+  .button {
+    display: block;
+  }
+}
